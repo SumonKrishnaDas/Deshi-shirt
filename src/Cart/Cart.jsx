@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 
 
@@ -12,6 +13,7 @@ const Cart = ({cart,handelRemoveFromCart}) => {
         meseage = <p>Please add some product </p>
 
      }
+
 else{
     meseage = <p> Thanks for order</p>
 }
@@ -19,8 +21,12 @@ else{
 
 
     return (
-        <div>
-{/* {meseage} */}
+        <div  className={cart.length===0?'red':'yellow'}>
+
+<h2 className={`bold ${cart.length===1?'purple':'blue'}`}> Something </h2>
+
+
+{meseage}
 
 {/* {cart.length > 2? <span> Aro kin re vai</span>:<span> ba beta boroluk</span>} */}
 {
@@ -30,7 +36,7 @@ else{
 
 {
 
-    cart.length ===3 || <h6> 3 ta hoice na</h6>
+    // cart.length ===3 || <h6> 3 ta hoice na</h6>
 }
 
 

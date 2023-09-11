@@ -14,6 +14,7 @@ import {
 
  } from"react-router-dom"
 import OrderReview from './Components/OrderReview/OrderReview.jsx'
+import Grandpa from './Components/Grandpa/Grandpa.jsx'
 
 
 const router = createBrowserRouter([
@@ -38,18 +39,12 @@ loader:()=> fetch('tshirt.json')
 
 path:'/review',
 element:<OrderReview> </OrderReview>
+},
 
+{
 
-
-
-
-
-
-
-
-
-
-
+  path:'/grandpa',
+  element:<Grandpa> </Grandpa>
 
 }
 
