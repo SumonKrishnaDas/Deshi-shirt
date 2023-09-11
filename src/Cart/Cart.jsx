@@ -12,13 +12,28 @@ const Cart = ({cart,handelRemoveFromCart}) => {
         meseage = <p>Please add some product </p>
 
      }
-
+else{
+    meseage = <p> Thanks for order</p>
+}
 
 
 
     return (
         <div>
-{meseage}
+{/* {meseage} */}
+
+{/* {cart.length > 2? <span> Aro kin re vai</span>:<span> ba beta boroluk</span>} */}
+{
+
+    // cart.length== 2 && <p>Double kinla </p>
+}
+
+{
+
+    cart.length ===3 || <h6> 3 ta hoice na</h6>
+}
+
+
 
             {
 
